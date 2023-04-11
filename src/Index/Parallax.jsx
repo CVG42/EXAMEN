@@ -2,6 +2,8 @@ import React from 'react'
 import './Home.css'
 import { Tooltip } from 'antd';
 import PropTypes from 'prop-types' 
+import githublogo from '../../public/githublogo.png'
+import fblogo from '../../public/fblogo.png'
 
 export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
   return (
@@ -16,7 +18,7 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
             <h3 className='border'>{t1}</h3>
             <div className='row'>
                 <div className='col'>
-                    <img className='unity-logo' src={require("../unity-logo.png")} alt="unity" />
+                    <img className='unity-logo' src={githublogo} alt="unity" />
                 </div>
             </div>
         </div>
@@ -32,7 +34,7 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
             <p className='descripcion'>Juego de plataformas desarrollado en Unity 2D.</p>
             <Tooltip title='Repositorio'>
                 <a href="https://github.com/CVG42/CapybaraParty" target='_blank'>
-                    <img className='capy-repo' src={require("../githublogo.png")} alt="github" />
+                    <img className='capy-repo' src={githublogo} alt="github" />
                 </a>
             </Tooltip>
         </div>
@@ -48,7 +50,7 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
             <p className='descripcion'>Juego puzzle de dados en Unity 3D basado en álgebra lineal.</p>
             <Tooltip title='Repositorio'>
                 <a href="https://github.com/CVG42/Rolling_Dice" target='_blank'>
-                    <img className='capy-repo' src={require("../githublogo.png")} alt="github" />
+                    <img className='capy-repo' src={githublogo} alt="github" />
                 </a>
             </Tooltip>
         </div>
@@ -64,7 +66,7 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
             <p className='descripcion'>Juego de mesa roll 'n write el cual su campaña de Kickstarter comenzará próximamente.</p>
             <Tooltip title='Facebook'>
                 <a href="https://www.facebook.com/TabletopWorkshops/" target='_blank'>
-                    <img className='capy-repo' src={require("../fblogo.png")} alt="facebook" />
+                    <img className='capy-repo' src={fblogo} alt="facebook" />
                 </a>
             </Tooltip>
         </div>
@@ -80,7 +82,7 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
             <p className='descripcion'>Farming simulator y RPG en desarrollo.</p>
             <Tooltip title='Repositorio'>
                 <a href="https://github.com/CVG42/TokiNoAto_Prototype" target='_blank'>
-                    <img className='capy-repo' src={require("../githublogo.png")} alt="github" />
+                    <img className='capy-repo' src={githublogo} alt="github" />
                 </a>
             </Tooltip>
         </div>
