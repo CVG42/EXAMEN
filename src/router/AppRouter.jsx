@@ -6,6 +6,19 @@ import { Spotify } from '../Spotify/Spotify'
 import { Calculadora } from '../Calculadora/Calculadora'
 import { TodoApp } from '../Todo/TodoApp'
 import { PianoApp } from '../Piano/PianoApp'
+import '../Mainpage.css'
+
+const MainPage = () => {
+  return(
+      <>
+          <br />
+          <br />
+          <div className='wrapper'>
+              <div className='main-title'>Bienvenido</div>
+          </div>
+      </>
+  )
+}
 
 export const AppRouter = () => {
   return (
@@ -17,6 +30,7 @@ export const AppRouter = () => {
             <Route path='/calculadora' element={<Calculadora titulo='Calculadora'/>}/>
             <Route path='/todo' element={<TodoApp lista='To-do'/>}/>
             <Route path='/piano' element={<PianoApp titulo='Piano'/>}/>
+            <Route path='/*' element={<MainPage/>}/>
         </Routes>  
     </>
   )
