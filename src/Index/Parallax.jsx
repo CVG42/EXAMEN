@@ -1,9 +1,9 @@
 import React from 'react'
 import './Home.css'
-import { Tooltip } from 'antd';
+import { Tooltip, Button } from 'antd';
 import PropTypes from 'prop-types' 
-import githublogo from '../../public/githublogo.png'
-import fblogo from '../../public/fblogo.png'
+import { GithubOutlined, FacebookOutlined } from '@ant-design/icons'
+import { BsUnity } from "react-icons/bs";
 
 export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
   return (
@@ -18,7 +18,7 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
             <h3 className='border'>{t1}</h3>
             <div className='row'>
                 <div className='col'>
-                    <img className='unity-logo' src={githublogo} alt="unity" />
+                    <BsUnity color='white' size='5rem'/>
                 </div>
             </div>
         </div>
@@ -32,10 +32,8 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
         <div className='section'>
             <h3 className='border'>{t2}</h3>
             <p className='descripcion'>Juego de plataformas desarrollado en Unity 2D.</p>
-            <Tooltip title='Repositorio'>
-                <a href="https://github.com/CVG42/CapybaraParty" target='_blank'>
-                    <img className='capy-repo' src={githublogo} alt="github" />
-                </a>
+            <Tooltip title="github">
+                    <Button size='middle' target='_blank' shape="circle" icon={<GithubOutlined style={{fontSize:22}}/>} href="https://github.com/CVG42/CapybaraParty" />
             </Tooltip>
         </div>
 
@@ -48,10 +46,8 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
         <div className='section'>
             <h3 className='border'>{t3}</h3>
             <p className='descripcion'>Juego puzzle de dados en Unity 3D basado en álgebra lineal.</p>
-            <Tooltip title='Repositorio'>
-                <a href="https://github.com/CVG42/Rolling_Dice" target='_blank'>
-                    <img className='capy-repo' src={githublogo} alt="github" />
-                </a>
+            <Tooltip title="github">
+                    <Button size='middle' target='_blank' shape="circle" icon={<GithubOutlined style={{fontSize:22}}/>} href="https://github.com/CVG42/Rolling_Dice" />
             </Tooltip>
         </div>
 
@@ -64,10 +60,8 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
         <div className='section'>
             <h3 className='border'>{t4}</h3>
             <p className='descripcion'>Juego de mesa roll 'n write el cual su campaña de Kickstarter comenzará próximamente.</p>
-            <Tooltip title='Facebook'>
-                <a href="https://www.facebook.com/TabletopWorkshops/" target='_blank'>
-                    <img className='capy-repo' src={fblogo} alt="facebook" />
-                </a>
+            <Tooltip title="github">
+                    <Button size='middle' target='_blank' shape="circle" icon={<FacebookOutlined style={{fontSize:22}}/>} href="https://www.facebook.com/TabletopWorkshops/" />
             </Tooltip>
         </div>
 
@@ -80,10 +74,8 @@ export const Parallax = ({titulo, t5 , t1, t2, t3, t4}) => {
         <div className='section'>
             <h3 className='border'>{t5}</h3>
             <p className='descripcion'>Farming simulator y RPG en desarrollo.</p>
-            <Tooltip title='Repositorio'>
-                <a href="https://github.com/CVG42/TokiNoAto_Prototype" target='_blank'>
-                    <img className='capy-repo' src={githublogo} alt="github" />
-                </a>
+            <Tooltip title="github">
+                    <Button size='middle' target='_blank' shape="circle" icon={<GithubOutlined style={{fontSize:22}}/>} href="https://github.com/CVG42/TokiNoAto_Prototype" />
             </Tooltip>
         </div>
 

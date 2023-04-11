@@ -79,6 +79,7 @@ body, html{
 }
 
 .unity-logo{
+    background-image: url(../unity-logo.png);
     width: 300px;
 }
 
@@ -88,10 +89,20 @@ body, html{
     color: white;
 }
 
-.capy-repo{
+.github-logo{
     width: 50px;
     align-items: center;
     display: flex;
     margin: auto;
     position: relative;
+    background-image: url(../githublogo.png);
+}
+
+.fb-logo{
+    width: 50px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    position: relative;
+    background-image: url(../fblogo.png);
 }
